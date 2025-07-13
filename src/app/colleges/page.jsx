@@ -27,11 +27,9 @@ export default async function Colleges() {
               <strong>Total Research:</strong> {college.researchCount}
             </p>
             <div className="card-actions justify-end mt-4">
-              <button className="btn text-orange-500">
-                <Link href={`/colleges/${college._id}`} className="">
-                  See Details
-                </Link>
-              </button>
+              <Link href={`/colleges/${college._id}`} className="">
+                <button className="btn text-orange-500">See Details</button>
+              </Link>
             </div>
           </div>
         </div>
