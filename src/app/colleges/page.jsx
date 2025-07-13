@@ -1,8 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default async function Colleges({ params }) {
-  const p = await params;
+export default async function Colleges() {
   const res = await fetch(`http://localhost:3000/api/colleges`);
   const collegeData = await res.json();
   return (
